@@ -1,0 +1,920 @@
+/*
+
+Template Name: Dinat Multipurpose HTML Template
+Template Author: Md Dalwar
+Template URI: http://dinat.wpcoderpro.com
+
+======================================================
+TABLE OF CONTENT
+======================================================
+
+1. General Styles
+2. Top Bar
+3. Primary Navigation
+4. Home Slider
+5. Icon Box
+6. Information
+7. Call To Action
+8. Image Box
+9. Projects
+10. Subscribe
+11. Footer
+12. Widgets
+13. Page Banner Background
+14. Blog Posts
+15. Comments
+
+*/
+
+/*---------------------------------------------------
+1. General Styles
+---------------------------------------------------*/
+body {
+	margin: 0;
+}
+div, section, article, aside, ul, ol, p, h1, h2, h3, h4, h5, h6, .navbar {
+	margin: 0;
+	padding: 0;
+}
+
+/*---------------------------------------------------
+2. Top Bar
+---------------------------------------------------*/
+.preloader {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+.preloader img {
+	margin-top: 23%;
+}
+.top-bar {
+	background: #27AE60;
+	overflow: hidden;
+	padding: 5px 0;
+}
+.social-links ul li a {
+	display: inline-block;
+	padding: 0 5px;
+	border: 1px solid #ffffff;
+	text-decoration: none;
+	font-size: 18px;
+	color: #ffffff;
+	transition: .5s;
+}
+.social-links ul li a:hover {
+	background: #ffffff;
+	color: #27AE60;
+}
+.post-share .social-links ul li {
+	vertical-align: middle;
+}
+.post-share .social-links ul li a {
+	color: #ffffff;
+	border-color: #222222;
+	background: #222222;
+	font-size: 25px;
+	padding: 0 10px;
+}
+.post-share .social-links ul li a:hover {
+	color: #ffffff;
+	border-color: #27AE60;
+	background: #27AE60;
+}
+
+
+/*---------------------------------------------------
+3. Primary Navigation
+---------------------------------------------------*/
+.site-logo a img {
+	width: 150px;
+	height: auto;
+}
+#site-nav {
+	justify-content: right;
+}
+.nav-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	animation: .5s slideInDown both;
+	-moz-animation: .5s slideInDown both;
+}
+.menu {
+	width: 100%;
+}
+.menu ul {
+	list-style: none;
+	text-align: right;
+}
+.menu ul li {
+	display: inline-block;
+	text-align: left;
+}
+.menu ul li a {
+	display: inline-block;
+	color: #222222;
+	text-decoration: none;
+	padding: 25px 10px;
+	font-weight: bold;
+	font-size: 16px;
+	transition: .3s;
+}
+.menu ul li a:hover {
+	color: #27AE60;
+}
+.menu ul li.has-submenu, .menu ul li.has-submenu ul > li.has-submenu {
+	position: relative;
+}
+.menu ul li.has-submenu > a:after {
+	display: inline-block;
+	font-family: 'Icofont';
+	content: '\ea99';
+	margin-left: 10px;
+}
+.menu ul li.has-submenu ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	min-width: 150px;
+	background: #27AE60;
+	padding: 2px 0;
+	display: none;
+	z-index: 10;
+}
+
+.menu ul li.has-submenu ul > li.has-submenu ul {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	min-width: 150px;
+	background: #27AE60;
+	padding: 2px 0;
+	display: none;
+	z-index: 10;
+}
+.menu ul li.has-submenu ul > li.has-submenu:hover ul, .menu ul > li.has-submenu:hover ul {
+	display: block;
+}
+.menu ul li.has-submenu ul li {
+	display: block;
+}
+.menu ul li.has-submenu ul li a {
+	display: block;
+	padding: 5px 10px;
+	color: #ffffff;
+}
+.menu ul li.has-submenu ul > li.has-submenu > a:after {
+	display: inline-block;
+	font-family: 'Icofont';
+	content: '\eaa0';
+	margin-right: 10px;
+	position: absolute;
+	right: 0;
+}
+.menu ul li.has-submenu ul li a:hover {
+	color: #27AE60;
+	background: #ffffff;
+}
+
+/*---------------------------------------------------
+4. Home Slider
+---------------------------------------------------*/
+.banner {
+	overflow: hidden;
+}
+.bg-overlay{
+  position: relative;
+  z-index: 1;
+}
+.bg-overlay::after {
+  background: #000 none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.home-slider {
+    position: relative;
+}
+.owl-nav .owl-next, .owl-nav .owl-prev {
+    position: absolute;
+    top: 48%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.owl-nav .owl-next {
+    right: 0;
+    display: flex;
+    color: #ffffff !important;
+    margin-right: 2%;
+    font-size: 25px !important;
+}
+.owl-nav .owl-prev{
+    left: 0;
+    display: flex;
+    color: #ffffff !important;
+    margin-left: 2%;
+    font-size: 25px !important;
+}
+.slide-1 {
+	background: url('img/slider/slide-1.jpg');
+}
+.slide-2 {
+	background: url('img/slider/slide-2.jpg');
+}
+.slide-3 {
+	background: url('img/slider/slide-3.jpg');
+}
+.slide {
+	background-position: cover;
+	background-size: 100% 100%;
+    background-color: #333333;
+    background-repeat: no-repeat;
+	overflow: hidden;
+	padding: 8rem 0;
+}
+.slide h1 {
+	text-transform: uppercase;
+	font-size: 50px;
+	font-weight: 700;
+	color: #fff;
+	margin: 20px 0;
+}
+.slide p {
+	width: 60%;
+	color: #fff;
+	font-size: 16px;
+}
+.slide-btn {
+	margin: 3em 0;
+}
+.site-btn {
+	border: 1px solid transparent;
+	border-radius: 0;
+	transition: .3s;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 7px 20px; 
+}
+.site-btn-colored {
+	background-color: #27ae60;
+	color: #ffffff;
+}
+.site-btn-colored:hover {
+	background-color: #222222;
+	color: #ffffff;
+}
+.site-btn-dark {
+	background-color: #ffffff;
+	color: #27ae60;
+}
+.site-btn-dark:hover {
+	background-color: #222222;
+	color: #ffffff;
+}
+
+/*---------------------------------------------------
+5. Icon Box
+---------------------------------------------------*/
+.icon-box, .info, .image-box, .projects, .icon-round-box, .partnars {
+	padding: 50px 0;
+	overflow: hidden;
+}
+.icon-box-item {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.icon {
+	padding: 15px;
+	text-align: center;
+}
+.icon i {
+	display: inline-block;
+	font-size: 50px;
+	color: #27ae60;
+}
+.box-head h4 {
+	font-weight: 600;
+	font-size: 20px;
+	margin: 15px 0;
+}
+.round-icon-box {
+	padding: 10px;
+	border: 1px solid #27ae60;
+	margin: 10px 0;
+}
+.round-icon-box .icon i {
+	border: 2px solid #27ae60;
+	padding: 15px;
+	border-radius: 50%;
+	transition: .5s;
+}
+.round-icon-box:hover .icon i {
+	-webkit-transform: rotateX(-1deg) scale(1.3);
+	-moz-transform: rotateX(-1deg) scale(1.3);
+	-ms-transform: rotateX(-1deg) scale(1.3);
+	-o-transform: rotateX(-1deg) scale(1.3);
+	transform:  rotateX(-1deg) scale(1.3);
+}
+
+
+/*---------------------------------------------------
+6. Information
+---------------------------------------------------*/
+
+.info-content {
+	margin-top: 30px;
+}
+.info-thumb img {
+	width: 100%;
+	height: auto;
+}
+.site-head h2{
+	font-size: 40px;
+	font-weight: 600;
+}
+.site-head p {
+	width: 60%;
+}
+.bar {
+	height: 5px;
+	width: 10%;
+	background: #27ae60;
+	margin: 15px 0;
+}
+.bar-center {
+	height: 5px;
+	width: 10%;
+	background: #27ae60;
+	margin: 15px auto;
+}
+.icon-list ul {
+	list-style: none;
+	margin-top: 30px;
+}
+.icon-list ul li::before{
+	content: '\eabc';
+	font-family: 'Icofont';
+	display: inline-block;
+	margin-right: 10px;
+	font-size: 20px;
+	color: #27ae60;
+}
+.icon-list ul li {	
+	line-height: 2em;
+	font-weight: 600;
+}
+.two-column ul li {
+	width: 50%;
+	float: left;
+	overflow: hidden;
+}
+
+/*---------------------------------------------------
+7. Call To Action
+---------------------------------------------------*/
+
+.action-head h3 {
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.col-to-action-btn {
+	margin-top: 2em;
+}
+
+/*---------------------------------------------------
+8. Image Box
+---------------------------------------------------*/
+
+.box-image {
+  position: relative;
+}
+
+.box-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.box-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #27ae60;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  opacity: .8;
+}
+
+.box-image-item:hover .box-image-overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.image-head h4{
+	text-transform: uppercase;
+	margin: 15px 0;
+	font-size: 20px;
+	font-weight: 600;
+}
+.image-box-info {
+	padding: 10px; 
+	border-bottom: 1px solid #27ae60;
+	border-left: 1px solid #27ae60;
+	border-right: 1px solid #27ae60;
+}
+
+/*---------------------------------------------------
+9. Projects
+---------------------------------------------------*/
+
+.projects {
+	background: #f8f8f8;
+	overflow: hidden;
+}
+.project-item {
+  position: relative;
+}
+
+.project-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.box-image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #27ae60;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  opacity: .8;
+}
+
+.project-item:hover .box-image-overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.icons {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.icons a {
+	text-decoration: none;
+	color: #ffffff;
+	display: inline-block;
+  	font-size: 40px;
+}
+.project-item {
+	margin: 15px 0;
+}
+
+.project-nav ul {
+	list-style: none;
+	margin: 20px 0;
+}
+.project-nav ul li {
+	display: inline-block;
+	padding: 5px 15px;
+	border: 1px solid #27ae60;
+	cursor: pointer;
+}
+.project-nav .mixitup-control-active {
+	background: #27ae60;
+	color: #ffffff;
+}
+
+/*---------------------------------------------------
+10. Subscribe
+---------------------------------------------------*/
+.subscribe {
+	background: #27AE60;
+	overflow: hidden;
+	padding: 30px 0;
+}
+.subscribe-intro h4 {
+	font-size: 40px;
+	margin: 0 0 20px  0;
+	font-size: 30px;
+	font-weight: 600;
+}
+.subscribe-form .form-control {
+	height: 2.5em;
+	font-size: 20px;
+}
+.subscribe-btn {
+	background: #222222;
+	color: #ffffff;
+}
+.subscribe-btn:hover {
+	background: #ffb142;
+}
+.subscribe-form input:focus {
+	box-shadow: inherit !important;
+	border-color: #ffffff;
+}
+
+/*---------------------------------------------------
+11. Footer
+---------------------------------------------------*/
+footer {
+	background: #2d3436;
+	overflow: hidden;
+	padding: 50px 0 20px 0;
+}
+
+.footer-bar {
+	height: 1px;
+	margin: 20px 0;
+}
+
+.footer-credit a, .footer-credit p {
+	color: #ffffff;
+	display: inline-block;
+	transition: .3s;
+}
+.footer-credit a:hover {
+	color: #27ae60; 
+}
+.footer-widget h3, .right-sidebar h3 {
+	font-weight: 600;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.right-sidebar h3 {
+	color: #222222;
+}
+.footer-widget ul, .sidebar-widget ul {
+	list-style-type: square;
+	margin: 15px 0 0 15px;
+}
+.footer-widget ul li a, .sidebar-widget ul li a {
+	color: #ffffff;
+	font-size: 16px;
+	transition: .3s;
+	display: inline-block;
+}
+.sidebar-widget ul li a {
+	color: #222222;
+}
+.footer-widget ul li::marker, .sidebar-widget ul li::marker {
+	color: #ffffff;
+	display: inline-block;
+	transition: .3s;
+}
+.footer-widget ul li {
+	color: #ffffff;
+}
+.footer-widget ul li a:hover, .sidebar-widget ul li a:hover{
+	color: #27ae60;
+	margin-left: 5px;
+}
+.sidebar-widget ul li a, .sidebar-widget ul li::marker {
+	color: #222222;
+}
+.search-widget .form-control {
+	border-radius: 0;
+	height: 3em;
+}
+.search-widget .form-control:focus {
+	box-shadow: none;
+	border-color: #27AE60;
+}
+.search-widget .input-group-append button {
+	background: #27AE60;
+	border-radius: 0;
+	padding: 10px 20px;
+	font-size: 17px;
+}
+.search-widget .input-group-append button:hover {
+	background: #222222;
+}
+/*---------------------------------------------------
+12. Widgets
+---------------------------------------------------*/
+
+.tag-widget ul {
+	margin-left: 0;
+}
+.tag-widget ul li {
+	display: inline-block;
+}
+.tag-widget ul li a {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #ffffff;
+	margin: 5px;
+	text-decoration: none;
+}
+.sidebar-widget .tag-widget ul li a{
+	border-color: #222222;
+}
+.tag-widget ul li a:hover {
+	display: inline-block;
+	padding: 5px 10px;
+	border: 1px solid #27ae60;
+	color: #ffffff;
+	margin: 5px;
+	text-decoration: none;
+	background: #27ae60;
+}
+.footer-widget .popular-posts {
+	margin-top: 20px;
+}
+.footer-widget .popular-post-item .box-image, .sidebar-widget .popular-post-item .box-image {
+	width: 30%;
+	float: left;
+	margin-right: 3%;
+}
+.popular-post-info {
+	overflow: hidden;
+	width: 67%;
+}
+.popular-post-item a {
+	color: #cccccc;
+	display: inline-block;
+	text-decoration: none;
+}
+.popular-post-info h4 {
+	font-size: 16px;
+	padding: 0 0 3px 0;
+	color: #ffffff;
+	transition: .3s;
+}
+.popular-post-info p {
+	font-size: 13px;
+}
+.popular-post-info p i {
+	display: inline-block;
+	font-size: 15px;
+	margin-right: 5px;
+}
+.sidebar-widget .popular-post-info h4, .sidebar-widget .popular-post-info p {
+	color: #222222 !important;
+}
+.sidebar-widget h3 {
+	margin: 20px 0;
+}
+.sidebar-widget .popular-post-info h4:hover {
+	color: #27ae60 !important;
+}
+.footer-widget .popular-post-item, .sidebar-widget .popular-post-item {
+	margin: 5px 0;
+}
+.footer-widget .popular-post-item:hover .box-image-overlay, .sidebar-widget .popular-post-item:hover .box-image-overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.footer-widget .popular-post-item:hover .popular-post-info h4 {
+	color: #27ae60;
+}
+.footer-widget .social-intro, .sidebar-widget .social-intro {
+	font-size: 16px;
+	margin-top: 20px;
+	color: #ffffff;
+}
+.sidebar-widget .social-intro {
+	color: #222222;
+}
+.footer-widget .footer-social-links ul, .sidebar-widget .footer-social-links ul {
+	margin-left: 0;
+}
+.footer-widget .footer-social-links ul li a, .sidebar-widget .footer-social-links ul li a {
+	display: inline-block;
+	padding: 2px 8px;
+	border: 1px solid #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.footer-widget .footer-social-links ul li a:hover {
+	margin: 0;
+	background: #27ae60;
+	border-color: #27ae60;
+	color: #ffffff;
+}
+
+.sidebar-widget .footer-social-links ul li a {
+	color: #222222;
+	border-color: #222222;
+}
+.sidebar-widget .footer-social-links ul li a:hover {
+	margin: 0;
+	background: #27ae60;
+	border-color: #27ae60;
+	color: #ffffff;
+}
+
+/*---------------------------------------------------
+13. Page Banner Background
+---------------------------------------------------*/
+.page-banner {
+	padding: 14em 0;
+}
+.page-banner .page-title h2 {
+	font-weight: 700;
+	font-size: 50px;
+}
+.page-breadcum ul li a {
+	color: #ffffff;
+	display: inline-block;
+	font-size: 17px;
+	transition: .3s;
+}
+.page-breadcum ul li a:hover {
+	color: #27ae60;
+}
+.page-breadcum ul li.active {
+	color: #ffffff;
+}
+.blog-page-banner-bg {
+	background: url('img/blog-bg.jpg');
+	background-size: cover;
+	background-position: top center;
+}
+
+/*---------------------------------------------------
+14. Blog Posts
+---------------------------------------------------*/
+.blog-post-item {
+	padding: 20px 0;
+}
+.blog-post-item:hover {
+	background: #f8f8f8;
+}
+.post-info h3 a {
+	text-decoration: none;
+	color: #222222;
+	transition: .3s;
+	font-weight: 600;
+	font-size: 25px;
+}
+.post-info h3 a:hover {
+	color: #27AE60;
+}
+.post-info p {
+	margin: 10px 0;
+}
+.post-thumb a {
+	display: block;
+}
+.post-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.read-more a {
+	display: inline-block;
+	text-decoration: none;
+	color: #222222;
+}
+.read-more a i {
+	display: inline-block;
+	font-size: 25px;
+	vertical-align: middle;
+	transition: .3s;
+}
+.read-more a:hover {
+	color: #27ae60;
+}
+.read-more a:hover i {
+	margin-left: 5px;
+}
+.blog-title h3 {
+	margin: 15px 0;
+	font-weight: 600;
+}
+.blog-meta {
+	margin: 20px 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+.blog-meta p span {
+	display: inline-block;
+	margin-right: 10px;
+}
+.blog-meta p span:last-child {
+	margin-right: 0;
+}
+.blog-meta p span a {
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 600;
+	color: #222222;
+	transition: .3s;
+}
+.blog-meta p span a:hover, .author-info a:hover {
+	color: #27ae60;
+}
+.share-text {
+	font-weight: 600;
+	font-size: 20px;
+	margin-right: 15px;
+}
+.post-comment ul {
+	list-style: none;
+}
+.post-comment ul li.parent-comment {
+	margin: 20px 0 20px 0;
+}
+.post-comment ul li.child-comment {
+	margin: 20px 0 20px 4em;
+}
+.author-img img {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+	padding: 5px;
+	border: 1px solid #222;
+}
+.author-img {
+	float: left;
+	margin-right: 1%;
+}
+.author-info {
+	width: 80%;
+	overflow: hidden;
+}
+.author-info h4 {
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+.author-info h4 span {
+	text-transform: initial;
+	font-size: 16px;
+	font-weight: normal;
+}
+.author-info a {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 17px;
+	transition: .3s;
+	color: #222222;
+}
+
+/*---------------------------------------------------
+15. Comments
+---------------------------------------------------*/
+.comment-form h4 {
+	font-size: 30px;
+	margin: 20px 0;
+}
+.comment-form .form-group input, .comment-form .form-group textarea {
+	border-radius: 0 !important;
+}
+.comment-form .form-group input:focus, .comment-form .form-group textarea:focus {
+	box-shadow: none !important;
+	border-color: #27AE60;
+}
+.comment-form .form-group input[type='submit']{
+	background: #27AE60;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 18px;
+	transition: .3s;
+}
+.comment-form .form-group input[type='submit']:hover {
+	background: #222222;
+}
